@@ -1,6 +1,6 @@
 # Codexaegis-Application-Security-Code-Inspector
-I built Codexaegis, a developer-focused security inspection framework designed to analyze running web applications for vulnerabilities using automated attack simulation and modular security checks, with an architecture ready for future IDE integration.
-
+I built Codexaegis, a developer-focused security inspection framework designed to analyze running web applications for vulnerabilities using automated attack simulation and modular security checks, with an architecture ready for future IDE integration. 
+  
 ***
 <div align="center">
   <img src="doc/screenshots/project_flow1.png" alt="project" width="900"> 
