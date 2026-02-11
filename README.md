@@ -18,4 +18,4 @@ I built Codexaegis, a developer-focused security inspection framework designed t
 
 # Workflow
 
-## Phase # 1: Build the app ( [app.py](https://github.com/uAckerman/Codexaegis-Application-Security-Code-Inspector/blob/main/app.py) )
+## Phase 1: Build the app ( [app.py](https://github.com/uAckerman/Codexaegis-Application-Security-Code-Inspector/blob/main/app.py) )
