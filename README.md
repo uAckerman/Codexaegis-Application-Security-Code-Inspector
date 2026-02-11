@@ -15,3 +15,7 @@ I built Codexaegis, a developer-focused security inspection framework designed t
 - Modular security check system
 - Vulnerable and secure demo applications
 - IDE integration ready architecture
+
+# Workflow
+
+## Phase # 1: Build the app ( [app.py](https://github.com/uAckerman/Codexaegis-Application-Security-Code-Inspector/blob/main/app.py) )
