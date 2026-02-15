@@ -1,12 +1,13 @@
 from flask import Flask, request, render_template
-import sqlite3
-import os
+import sqlite3 # to interact with the SQLite database.
+import os # to check if the database file already exists.
 
-app = Flask(__name__)
+app = Flask(__name__) # application instance is created.
 
 DATABASE = "database.db"
 
 # Initialize Database
+# This function is responsible for setting up the database when the application runs for the first time.
 def init_db():
     if not os.path.exists(DATABASE):
         conn = sqlite3.connect(DATABASE)
@@ -25,9 +26,9 @@ def init_db():
         conn.commit()
         conn.close()
 
-init_db()
+init_db() # The function is called immediately so the database is initialized before handling any requests.
 
-@app.route("/")
+@app.route("/") # root URL, Welcome Page
 def home():
     return "<h2>Welcome to Vulnerable App</h2><a href='/login'>Login</a>"
 
@@ -56,3 +57,4 @@ def login():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
