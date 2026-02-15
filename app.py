@@ -32,7 +32,7 @@ init_db() # The function is called immediately so the database is initialized be
 def home():
     return "<h2>Welcome to Vulnerable App</h2><a href='/login'>Login</a>"
 
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/login", methods=["GET", "POST"]) # GET renders the login template, POST trigger when user submit form
 def login():
     if request.method == "POST":
         username = request.form["username"]
@@ -57,4 +57,5 @@ def login():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
