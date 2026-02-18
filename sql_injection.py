@@ -2,7 +2,7 @@ import requests
 from base_check import BaseCheck
 
 class SQLInjectionCheck(BaseCheck):
-    name = "SQL Injection Check"
+    name = "Checking SQL Injection"
 
     def run(self, base_url):
         payload = {
@@ -30,3 +30,4 @@ class SQLInjectionCheck(BaseCheck):
                 "status": "ERROR",
                 "detail": str(e)
             }
+
