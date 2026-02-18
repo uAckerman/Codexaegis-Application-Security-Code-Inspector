@@ -6,7 +6,7 @@ class SQLInjectionCheck(BaseCheck):
 
     def run(self, base_url):
         payload = {
-            "username": "' OR '1'='1",
+            "username": "' OR '1'='1",  # one of the SQL Injection query
             "password": "' OR '1'='1"
         }
 
@@ -30,4 +30,5 @@ class SQLInjectionCheck(BaseCheck):
                 "status": "ERROR",
                 "detail": str(e)
             }
+
 
